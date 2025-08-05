@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+
+    <h1>Jogo da Forca</h1>
+    <img id="imagem" src="img/forca0.png" alt="">
+    <div id="exebicao-palavra"></div>
+    <input id="entrada-letra" type="text" placeholder="Chute uma etra" maxlength="1">
+    <button id="btn-chutar">Chutar</button>
+
+    <h2>Letras Chutadas</h2>
+    <div id="letras-chutadas"></div>
+    <div id="mensagem">Você Ganhou!</div> <br>
+    <button id="botao-reiniciar">Recomeçar</button>
+
+<script>
+    const listaPalavras = ["javascript", "html", "css", "progamador"];
+
+    let palavraEscolhida;
+    let exibicaoPalavra;
+    let letrasChutadas;
+    let tentativasRestantes;
+    let numeroErros;
+
+    function iniciarJogo(){
+        palavraEscolhida = listaPalavras[Math.floor(Math.random() * listaPalavras.length)];
+
+        exibicaoPalavra = Array(palavraEscolhida.length).fill('_');
+        console.log(exibicaoPalavra)
+
+        letrasChutadas = [];
+
+        tentativasRestantes = 7;
+
+        numeroErros = 0;
+
+        atualizarExibicao();
+
+    }
+
+    function atualizarExibicao(){
+        document.getElementById("exebicao-palavra").innerText = exibicaoPalavra.join('  ');
+        document.getElementById("letras-chutadas").innerText = `${letrasChutadas.join(', ')}`;
+
+        document.getElementById("imagem").src = `img/forca${numeroErros}.png`;
+
+        
+    }
+
+    window.load = iniciarJogo();
+</script>
+</body>
+</html>
