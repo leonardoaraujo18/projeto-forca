@@ -19,6 +19,7 @@ body{
 
 #botao-reiniciar{
     background: #4caf50;
+    margin: auto;
     border: none;
     color: #fff;
     padding: 10px 20px;
