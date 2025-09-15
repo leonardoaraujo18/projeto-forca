@@ -1,29 +1,29 @@
-PROJETO FORCA
+<h1>🎮 Jogo da Forca</h1>
 
-Este é um projeto do clássico Jogo da Forca, criado como um exercício prático em desenvolvimento web. O jogo oferece uma experiência direta e funcional, focada em uma interface limpa e intuitiva.
+Este projeto é uma implementação do clássico Jogo da Forca, desenvolvido para ser jogado diretamente no navegador. O objetivo é adivinhar a palavra secreta chutando letras, enquanto o desenho da forca vai sendo completado a cada erro.
 
-​FUNCIONALIDADES:
+<h3>✨ Funcionalidades</h3>
 
-​Design Minimalista: A interface foi pensada para ser simples e focada no jogo, sem distrações.
+• Exibe a forca que vai sendo desenhada a cada erro.
 
-​Controle Visual de Tentativas: A cada erro, uma nova parte da forca é desenhada, permitindo ao jogador visualizar o progresso de suas tentativas restantes.
+• Mostra os espaços da palavra secreta com traços.
 
-​Registro de Letras: As letras já chutadas são exibidas na tela para que o jogador possa acompanhar e evitar repetições.
+• Permite que o jogador chute letras pelo campo de input.
 
-​Jogabilidade Completa: O jogo cobre todo o ciclo, desde a adivinhação até a vitória ou a derrota.
+• Lista as letras já chutadas para evitar repetições.
 
-​TECNOLOGIAS UTILIZADAS:
+• Finaliza o jogo com vitória ou derrota dependendo dos acertos e erros.
 
-​HTML: Para estruturar a página e os elementos do jogo.
-​CSS: Para estilizar o jogo e criar a representação visual da forca.
-​JavaScript: Para toda a lógica do jogo, incluindo a seleção da palavra, a validação dos chutes, o controle do estado do jogo e a atualização da interface.
+<h3>🛠️ Tecnologias Utilizadas</h3>
 
-​COMO EXECUTAR O PROJETO:
-​Para rodar o projeto em sua máquina local, siga os passos abaixo:
+• HTML5 – Estrutura da página
 
-1.Clone o repositório
-  git clone https://github.com/leonardoaraujo18/jogodaforca.git
+• CSS3 – Estilização e layout
 
-2.Abra o arquivo index.html: Simplesmente navegue até a pasta do projeto e abra o arquivo index.html em seu navegador web preferido.
+• JavaScript – Lógica do jogo (validação das letras, sorteio da palavra, atualização da tela)
 
-Projeto no ar: https://leonardoaraujo18.github.io/projeto-forca/
+<h3>🎯 Objetivo</h3>
+
+O projeto foi desenvolvido para fins de prática em lógica de programação, DOM manipulation e interatividade no JavaScript, recriando um dos jogos clássicos mais conhecidos de adivinhação.
+
+Veja o projeto aqui: https://leosilva19.github.io/projeto-forca/
